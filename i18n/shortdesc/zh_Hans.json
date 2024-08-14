@@ -1,1 +1,7 @@
-{}
+{
+    "shortdesc_ground_vehicle": "地面载具",
+    "shortdesc_manufactured_by": "％s 由 ％s 制造",
+    "shortdesc_ship": "飞船",
+    "shortdesc_grade": "％s 等级 ％s",
+    "shortdesc_single_seat": "单座"
+}
