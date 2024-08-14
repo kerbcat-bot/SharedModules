@@ -1,6 +1,6 @@
 {
     "message_error_no_availability_title": "找不到可用数据。",
-    "message_error_no_data_text": "页面找不到SMW数据。如果您已注册，空编辑或页面清除可能会解决此问题。",
+    "message_error_no_data_text": "页面找不到SMW数据。如果您已注册，空编辑或刷新页面可能会解决此问题。",
     "message_error_no_description_text": "在游戏数据中找不到此项目的描述。",
     "message_error_no_description_title": "找不到描述。",
     "message_error_no_infobox_data_title": "找不到信息框数据",
