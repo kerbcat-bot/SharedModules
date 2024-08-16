@@ -51,5 +51,12 @@
     "category_itemtype_char_armor_torso.medium": "中型胸甲",
     "category_itemtype_char_clothing_hat.heavy": "重型帽子",
     "category_itemtype_char_clothing_legs.medium": "中型裤子",
-    "category_itemtype_externalfueltank": "燃料舱"
+    "category_itemtype_externalfueltank": "燃料舱",
+    "category_itemtype_food.box": "食物",
+    "category_itemtype_food.consumable": "食物",
+    "category_itemtype_food.harvestable": "食物",
+    "category_itemtype_food.junk": "食物",
+    "category_itemtype_food.plant": "食物",
+    "category_itemtype_food.sachet": "食物",
+    "category_itemtype_food.tin": "食物"
 }
