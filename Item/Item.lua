@@ -263,9 +263,9 @@ function methodtable.getInfobox( self )
 	local function getType()
 		if smwData[ t( 'SMW_Type' ) ] == nil then return end
 
-		local itemType = translate( mw.ustring.format( 'type_%s', mw.ustring.lower( smwData[ t( 'SMW_Type' ) ] ) ) )
+		local itemType = t( mw.ustring.format( 'label_itemtype_%s', mw.ustring.lower( smwData[ t( 'SMW_Type' ) ] ) ) )
 
-		if mw.ustring.find( itemType, 'type_' ) then
+		if mw.ustring.find( itemType, 'label_itemtype_' ) then
 			itemType = smwData[ t( 'SMW_Type' ) ]
 		end
 
@@ -433,8 +433,8 @@ function methodtable.getInfobox( self )
 			content = {
 				infobox:renderItem( {
 					icon = 'WikimediaUI-Search.svg',
-					data = translate( 'actions_find_item_title' ),
-					desc = translate( 'actions_find_item_text' ),
+					data = translate( 'label_actions_find_item_title' ),
+					desc = t( 'label_actions_find_item_text' ),
 					-- FIXME: Make this configurable?
 					link = 'https://finder.cstone.space/search/' .. smwData[ t( 'SMW_UUID' ) ]
 				} )
@@ -517,11 +517,11 @@ function methodtable.getAvailability( self )
 			:addClass( 't-finditemuif__label' )
 			:tag( 'div' )
 				:addClass( 't-finditemuif__title' )
-				:wikitext( translate( 'actions_find_item_title' ) )
+				:wikitext( translate( 'label_actions_find_item_title' ) )
 				:done()
 			:tag( 'div' )
 				:addClass( 't-finditemuif__subtitle' )
-				:wikitext( translate( 'actions_find_item_text' ) )
+				:wikitext( t( 'label_actions_find_item_text' ) )
 				:allDone()
 		local chervon = mw.html.create( 'div' ):addClass( 'citizen-ui-icon mw-ui-icon-wikimedia-collapse' )
 		local container = mw.html.create( 'div' )
@@ -614,9 +614,9 @@ function methodtable.setShortDescription( self )
 			-- TODO: Localize subtype
 			itemType = self.smwData[ t( 'SMW_Subtype' ) ]
 		else
-			local itemTypeKey = 'type_' .. mw.ustring.lower( self.smwData[ t( 'SMW_Type' ) ] )
-			if translate( itemTypeKey ) ~= nil and translate( itemTypeKey ) ~= itemTypeKey then
-				itemType = translate( itemTypeKey )
+			local itemTypeKey = 'label_itemtype_' .. mw.ustring.lower( self.smwData[ t( 'SMW_Type' ) ] )
+			if t( itemTypeKey ) ~= nil and t( itemTypeKey ) ~= itemTypeKey then
+				itemType = t( itemTypeKey )
 			end
 		end
 		itemType = mw.ustring.lower( itemType )
