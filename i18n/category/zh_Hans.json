@@ -58,5 +58,10 @@
     "category_itemtype_food.junk": "食物",
     "category_itemtype_food.plant": "食物",
     "category_itemtype_food.sachet": "食物",
-    "category_itemtype_food.tin": "食物"
+    "category_itemtype_food.tin": "食物",
+    "category_itemtype_weaponattachment.bottomattachment": "下挂附件",
+    "category_itemtype_weaponattachment.magazine": "弹匣",
+    "category_itemtype_weaponattachment.utility": "多功能附件",
+    "category_itemtype_tractorbeam": "牵引光束",
+    "category_itemtype_weaponattachment.barrel": ""
 }
